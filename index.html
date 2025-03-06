@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YugoMoo Yogurt Bar</title>
+    <style type="text/css">
+        /* Resetting some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Body and general page settings */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            color: #2ecc71;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        header nav ul li a:hover {
+            color: #e74c3c;
+        }
+
+        /* Menu Section Styles */
+        #menu {
+            padding: 50px 0;
+            background-color: #fff;
+        }
+
+        #menu h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #f4f4f9;
+        }
+
+        .menu-description {
+            padding: 15px;
+        }
+
+        .menu-description h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .menu-description p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-top: 10px;
+        }
+
+        /* About Section Styles */
+        #about {
+            padding: 50px;
+            text-align: center;
+            background-color: #ecf0f1;
+        }
+
+        #about h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Google Maps Section */
+        #contact {
+            padding: 50px;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            border-radius: 8px;
+        }
+        
+        </style>
+        </head>
+        <body>
+        <header>
+        
+        <img src="https://media-hosting.imagekit.io//0412fedc19784e1a/inbound1145145379715058313.jpg?Expires=1835838134&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=qjkxVwCaID6npABar3I42LjyKh0K0pVGA4xbC~klda6YCcPRSfiCLjUD9i7RfSsG1iBneDcTe8zKQylqcOc6nIAqF-GV3YRbcbQhUbTGlM8RSlIDXdnzVL5Rd1JlCZvJqjDmr4xzW9ULXls7yNy4g0MPhLKfLWIHJ-I~~1ZvjHjsLi370HI6FZYTisx4fJ3GYKTiVJk2SX3wPAhz7CvnbrMM6bZNSFmptXRt1ylDCjheVIzUTNgeuUJgm5-ksFbWY4qznko-1I25eTdNc6y2mxaCO9yCdxmKMPFCGiZ3Is4XXxquNIuNFmSOm3QyKgul47dAlAgZT9Z9QpF9As7vEw__"
+        width="200" height="200">
+        <nav>
+        <ul>
+        <li><a href="https://www.google.com/search?q=poblacion%2C+alaminos%2C+2404%2C+pangasinan+100i+vape+lounge&oq=poblacion%2C+alaminos%2C+2404%2C+pangasinan+100i+vape+lounge&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRiSAzIHCAMQIRiSAzIHCAQQIRiSAzIHCAUQIRiSAzIHCAYQIRiSAzIHCAcQIRiSA9IBCTI1NTY1ajBqOagCDrACAfEFGWeKfa1xIGDxBRlnin2tcSBg&client=ms-android-oppo-rvo2&sourceid=chrome-mobile&ie=UTF-8">Location</a></li>
+        <li><a href="https://www.facebook.com/100iVapeLounge/">Facebook</a></li>
+        <li><a href="#location">Contact No.</a></li>
+        </ul>
+        </nav>
+        </header>
+        
+        <section id="menu">
+        <h2>Our Dispo Vape</h2>
+        <div class="menu-container">
+        <div class="menu-item">
+        <img src="https://media-hosting.imagekit.io//b318bc9eeb0846ef/inbound7704600642307792289.jpg?Expires=1835830068&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=H6g5cDZ7yKwm66IG13bK-cnHrm6JkweRAGwtP87hkSCyz-lY~LyO1G~B8GkZJRUz9zfiXHjzhyvXULpLA1LKWQAnESBXw~o22pAYDweC1lbJmv77MilvY99qRU5UeG5cVhQr9tJIM6u6em3ARkdoqOHf3AR6qrxTISLFq2SzFVf3lh9oeUxyAzRKgzW8e~sYduJ5HQpzXUW~9veLlCkp3cd61-0sX9joooafBGFCePi-seYXxl2ZKclRDW3qKWO-46lb2aYHW6X5cEyhTIulX7ZyBFysZ6nQwu-JRK8vPjNM0jGlTobbD4CKbwkOupAlnYE384gWQmCIvg0lDCSYsg__">
+        <div class="menu-description">
+        <h3>BLCK ELITE</h3>
+        <p>Flavor
+        </p>
+        <h4>
+        Water Melon,Yakult Ice, Honey Peach, Grape Ice, Bazooka Gum, Kopiko Blanca, Lemon Cola, Lychee, Blueberry Ice, Cappuccino,Mixed Cherry, Balck Curant, Mint, Strawberry Ice
+        </h4>
+        <div class="price">₱550 each</div>
+        </div>
+        </div>
+        <div class="menu-item">
+        <img src="https://media-hosting.imagekit.io//1ef0439ed03f481d/inbound1675567849161665588.jpg?Expires=1835830187&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=AFTJgU2KIURvCmzXN3MM3cbJuvs-cwh8ERRIfXajYdojSRDaPc8V8IgB86sya16ilWxWVSSSiILQnge-L-2nD7qKgKXrM4kSuCCme1RhuXUFK6ACoBxSw0u2L~KAP65kFcvPc4gCRQk2FQZcrKHsnjF0So59FdSiT~U~g98TQ55zUcddcDlK3SaM0lvcS4MsmFOFGAce-y12HF1qSYucrSA~Eq0vN4nY2YcJ7PldNzstEW3rkzA48FgqcN0ZcjkbSGRkuPlFUHtF97E38M51PfrDClooqvTOe0MeLur4Ecrl25YLcyqIgH-COos-CoP~DLhTs63YAGChkjb7DsKrEQ__" alt="YoguMoo MiniGo">
+        <div class="menu-description">
+        <h3>Geek Bar</h3>
+        <p>Flavor
+        </p>
+        <h4>
+        Melo Bubble, Fluffy Crown, Fresh Red, Subzero Purple, Last Kiss, Blue Knight, Fusion delight, Soft Bliss, Black Pink, Italiy Morning 
+        </h4>
+        <div class="price">₱550 each</div>
+        </div>
+        </div>
+        
+        </ul>
+        </nav>
+        </header>
+        
+        </body>
+        </html>

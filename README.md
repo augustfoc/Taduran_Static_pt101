@@ -1,0 +1,1 @@
+# Taduran_Static_pt101
